@@ -13,8 +13,6 @@ export default class DeleteDepartamento extends Component {
         let request = 'api/departamentos/' + idDepartamento;
         let url = Global.urlApiDepartamentos + request;
 
-        alert('Confirmar borrado');
-
         axios.delete(url).then(response => {
             this.setState({
                 borrado: true,
